@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(127, 136, 139);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+.container .left_side {
+    position: relative;
+    background: #003147;
+    padding: 40px;
+}
+
+.container .right_side {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.acerca {
+    margin-bottom: 50px;
+}
+
+.acerca:last-child {
+    margin-bottom: 0;
+}
+
+.título2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #333;
+}
+
+.perfil {
+    text-transform: uppercase;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.perfil .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.perfil h2 {
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.perfil h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+h1 {
+    color: blue;
+}
+
+.contacto {
+    padding-top: 40px;
+}
+
+.título {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contacto ul {
+    position: relative;
+}
+
+.contacto ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.contacto ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contacto ul li span {
+    color: #fff;
+    font-weight: 300;
+}
+
+a {
+    color: #fff;
+    font-weight: 300;
+}
+
+.educación {
+    padding-top: 15px;
+}
+
+.educación h5 {
+    color: #03a9f4;
+    font-weight: 500;
+}
+
+.educación h4:nth-child(2) {
+    color: #fff;
+    font-weight: 500;
+}
+
+.educación h4 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.acerca .caja {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.acerca .caja .año_compañía {
+    min-width: 150px;
+}
+
+.acerca .caja .año_compañía h5 {
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.acerca .caja .texto h4 {
+    text-transform: uppercase;
+    color: #2a7de2;
+    font-size: 16px;
+}
+
+.título2 {
+    margin-top: 5%;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+
+.skills .caja {
+    text-transform: uppercase;
+    color: #848c90;
+    width: 100%;
+    display: grid;
+    margin-top: 10%;
+    grid-template-columns: 150px 1fr;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 10 px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:600px) {
+    .acerca .caja {
+        flex-direction: column;
+    }
+    .acerca .caja .año_compañía {
+        margin-bottom: 5px;
+    }
+    .skills .caja {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
